@@ -3,10 +3,10 @@
 #define TEMPO_JOGADA_MAX 5000
 
 const byte LED[4] = { 5, 4, 3, 2 };
-const byte BOTAO[4] = { 6, 7, 8, 12 };
-const byte LEDRGB[3] = { 11, 10, 9 };
-const byte corVezDoJogador[3] = { 0, 150, 20 };
-const byte corVezDaMaquina[3] = { 150, 90, 0 };
+const byte BOTAO[4] = { 13, 7, 8, 12 };
+const byte LEDRGB[3] = { 11, 10, 6 };
+const byte corVezDoJogador[3] = { 0, 120, 50 };
+const byte corVezDaMaquina[3] = { 200, 90, 0 };
 
 uint32_t marcador;
 byte sequenciaCorreta[TAM_SEQ];
