@@ -6,7 +6,7 @@
 #define DISPLAYS 3
 
 Adafruit_SSD1306 display(128, 64, &Wire, -1);
-LiquidCrystal_AIP31068_I2C lcd(0x3E, 20, 4);
+LiquidCrystal_AIP31068_I2C lcd(0x3E, 20, 2);
 
 void setup()
 {
@@ -14,6 +14,8 @@ void setup()
 	display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
 	display.setTextSize(1);
 	display.setTextColor(SSD1306_WHITE);
+
+	lcd.init();
 }
 
 void loop()
@@ -26,4 +28,8 @@ void loop()
 	display.print(millis() / 1000);
 	display.print(F(" segundos"));
 	display.display();
+
+	lcd.clear();
+	lcd.setCursor(0, 0);
+	lcd.print(F("Ja se passaram"));
 }
