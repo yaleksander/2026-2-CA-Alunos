@@ -3,10 +3,7 @@
 #include <Adafruit_SSD1306.h>
 #include <LiquidCrystal_AIP31068_I2C.h>
 
-#define DISPLAYS 3
-
 Adafruit_SSD1306 display(128, 64, &Wire, -1);
-LiquidCrystal_AIP31068_I2C lcd(0x3E, 20, 4);
 
 void setup()
 {
