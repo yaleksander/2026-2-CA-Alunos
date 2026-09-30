@@ -1,0 +1,63 @@
+<circuit version="1.1.0-SR2" rev="260312" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="Subcircuit" CircId="Uno-16" mainComp="false" Show_id="true" Show_Val="false" Pos="-348,-184" rotation="0" hflip="1" vflip="1" label="Uno-16" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Logic_Symbol="false">
+<mainCompProps MainCompId="mega328-109" Frequency="16 MHz" Program="code.hex" Auto_Load="false" saveEepr="true" MainMcu="true" SerialMon="-1" />
+</item>
+
+<item itemtype="Ili9341" CircId="Ili9341-28" mainComp="false" Show_id="true" Show_Val="false" Pos="-336,-424" rotation="0" hflip="1" vflip="1" label="Ili9341-28" idLabPos="-32,-180" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Ili9341" CircId="Ili9341-41" mainComp="false" Show_id="true" Show_Val="false" Pos="-76,-424" rotation="0" hflip="1" vflip="1" label="Ili9341-41" idLabPos="-32,-180" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Max72xx_matrix" CircId="Max72xx_matrix-57" mainComp="false" Show_id="true" Show_Val="false" Pos="-632,-196" rotation="0" hflip="1" vflip="1" label="Max72xx_matrix-57" idLabPos="-32,-58" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" NumDisplays="4" />
+
+<item itemtype="Node" CircId="Node-48" mainComp="false" Pos="-376,-204" />
+
+<item itemtype="Node" CircId="Node-50" mainComp="false" Pos="-368,-196" />
+
+<item itemtype="Node" CircId="Node-51" mainComp="false" Pos="-360,-188" />
+
+<item itemtype="Node" CircId="Node-58" mainComp="false" Pos="-360,-56" />
+
+<item itemtype="Node" CircId="Node-61" mainComp="false" Pos="-124,-212" />
+
+<item itemtype="Node" CircId="Node-63" mainComp="false" Pos="-368,-72" />
+
+<item itemtype="Connector" uid="Connector-24" startpinid="Ili9341-28-PinCS" endpinid="Uno-16-3" pointList="-392,-240,-392,-144,-340,-144" />
+
+<item itemtype="Connector" uid="Connector-94" startpinid="Uno-16-2" endpinid="Ili9341-41-PinCS" pointList="-340,-152,-352,-152,-352,-220,-132,-220,-132,-240" />
+
+<item itemtype="Connector" uid="Connector-98" startpinid="Node-48-1" endpinid="Ili9341-41-PinDC" pointList="-376,-204,-116,-204,-116,-240" />
+
+<item itemtype="Connector" uid="Connector-99" startpinid="Ili9341-28-PinDC" endpinid="Node-48-0" pointList="-376,-240,-376,-204" />
+
+<item itemtype="Connector" uid="Connector-104" startpinid="Node-50-1" endpinid="Ili9341-41-PinMosi" pointList="-368,-196,-108,-196,-108,-240" />
+
+<item itemtype="Connector" uid="Connector-105" startpinid="Ili9341-28-PinMosi" endpinid="Node-50-0" pointList="-368,-240,-368,-196" />
+
+<item itemtype="Connector" uid="Connector-107" startpinid="Node-51-1" endpinid="Ili9341-41-PinSck" pointList="-360,-188,-100,-188,-100,-240" />
+
+<item itemtype="Connector" uid="Connector-108" startpinid="Ili9341-28-PinSck" endpinid="Node-51-0" pointList="-360,-240,-360,-188" />
+
+<item itemtype="Connector" uid="Connector-132" startpinid="Max72xx_matrix-57PinSck" endpinid="Node-58-1" pointList="-660,-144,-660,-56,-360,-56" />
+
+<item itemtype="Connector" uid="Connector-133" startpinid="Node-51-2" endpinid="Node-58-0" pointList="-360,-188,-360,-56" />
+
+<item itemtype="Connector" uid="Connector-134" startpinid="Node-58-2" endpinid="Uno-16-13" pointList="-360,-56,-340,-56" />
+
+<item itemtype="Connector" uid="Connector-142" startpinid="Ili9341-41-PinRst" endpinid="Node-61-0" pointList="-124,-240,-124,-212" />
+
+<item itemtype="Connector" uid="Connector-146" startpinid="Uno-16-3V3" endpinid="Node-61-1" pointList="-196,-80,-124,-80,-124,-212" />
+
+<item itemtype="Connector" uid="Connector-147" startpinid="Node-61-2" endpinid="Ili9341-28-PinRst" pointList="-124,-212,-384,-212,-384,-240" />
+
+<item itemtype="Connector" uid="Connector-151" startpinid="Max72xx_matrix-57PinCS" endpinid="Uno-16-4" pointList="-644,-144,-644,-136,-340,-136" />
+
+<item itemtype="Connector" uid="Connector-152" startpinid="Node-48-2" endpinid="Uno-16-5" pointList="-376,-204,-376,-128,-340,-128" />
+
+<item itemtype="Connector" uid="Connector-153" startpinid="Max72xx_matrix-57PinDin" endpinid="Node-63-1" pointList="-652,-144,-652,-72,-368,-72" />
+
+<item itemtype="Connector" uid="Connector-154" startpinid="Node-50-2" endpinid="Node-63-0" pointList="-368,-196,-368,-72" />
+
+<item itemtype="Connector" uid="Connector-155" startpinid="Node-63-2" endpinid="Uno-16-11" pointList="-368,-72,-340,-72" />
+
+</circuit>
