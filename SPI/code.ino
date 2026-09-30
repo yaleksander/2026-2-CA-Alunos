@@ -9,7 +9,7 @@
 #define CS_TFT2 2
 #define DC_TFT 5
 
-MD_Parola ledmat = MD_Parola(MD_MAX72XX::GENERIC_HW, CS_LEDMAT, 1);
+MD_Parola ledmat = MD_Parola(MD_MAX72XX::FC16_HW, CS_LEDMAT, 4);
 Adafruit_ILI9341 tft1 = Adafruit_ILI9341(CS_TFT1, DC_TFT, -1);
 Adafruit_ILI9341 tft2 = Adafruit_ILI9341(CS_TFT2, DC_TFT, -1);
 
@@ -39,6 +39,10 @@ void setup()
 	tft2.setTextSize(3);
 	tft2.println("Hello World!");
 	digitalWrite(CS_TFT2, HIGH);
+	
+	ledmat.displayClear();
+	ledmat.setTextAlignment(PA_LEFT);
+	ledmat.print("Hello world!");
 }
 
 void loop()
