@@ -2,6 +2,8 @@
 
 import csv
 import os
+import matplotlib.pyplot as plt
+import numpy as np
 
 with open(os.path.dirname(__file__) + ("/company_sales_data.csv")) as csvfile:
     reader = csv.reader(csvfile)
