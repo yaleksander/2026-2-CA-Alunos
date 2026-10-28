@@ -1,4 +1,4 @@
-# baixe o arquivo https://cdn.tse.jus.br/estatistica/sead/odsele/relatorio_resultado_totalizacao/Relatorio_Resultado_Totalizacao_2026_ES.zip
+# baixe o arquivo https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_secao/votacao_secao_2026_ES.zip
 # e extraia o csv para a mesma pasta do script
 
 import csv
